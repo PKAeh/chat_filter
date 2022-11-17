@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
-<body>
+<body onload="onLoad()">
     <div>
         <div class="title-bg"></div>
         <div class="bg">
             <div class="chat">
                 <div class="sidebar">
                     <div class="profile-chat">
-                        <div class="yourname">
+                        <div class="your-name">
                             <div class="avatar">
                                 <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="user-photo">
                             </div>
@@ -27,11 +28,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lists-chat"></div>
+                    <div class="lists-chat">
+
+                    </div>
                 </div>
                 <div class="detail"></div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+    <script src="script.js"></script>
+
+    <template id="profile-item">
+        <div class="profile-list">
+            <div class="picture">
+                <img src="" alt="profile-picture">
+            </div>
+            <div>
+                <p class="profile-name"></p>
+                <p class="profile-email"></p>
+            </div>
+        </div>
+    </template>
+
 </body>
 </html>
